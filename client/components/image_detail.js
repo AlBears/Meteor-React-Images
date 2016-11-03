@@ -1,4 +1,5 @@
 import React from 'react';
+import ProgressBar from './progress_bar';
 
 
 const ImageDetail = (props) => {
@@ -12,6 +13,8 @@ const ImageDetail = (props) => {
         <h4 className="media-heading">
           {image.title}
         </h4>
+        <p>{image.description}</p>
+        <ProgressBar ups={props.image.ups} downs={props.image.downs}/>
       </div>
     </li>
   );
